@@ -1,155 +1,323 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
-<link rel="stylesheet", href="/./css/style.css">
-<link rel="shortcut icon", href="/./favicon.ico">
-<link rel="apple-touch-icon", href="/./apple-touch-icon.png">
 
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="sweet8bit">
+  <meta name="keywords" content="">
+  <title>Archives - Hexo</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_fmb4a04yx8h.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<body>
+  <header style="height: 60vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
-    <meta name="generator" content="Hexo 4.2.1"></head>
-    <body>
-        <header class="al_header al_pos_fixed">
-    <div class="al_header_container dis_flex_jcenter">
-        <div class="al_header_container_left">
-            <div class="al_header_site_title">
-                <a href="/">Hexo</a>
-            </div>
-        </div>
-
-        <div class="dis_flex_jcenter">
-            <div class="al_header_setting">
-                <svg class="al_header_icon">
-                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
-                </svg>
-            </div>
-        </div>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              Home</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              Archives</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              Categories</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              Tags</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              About</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
     </div>
-</header>
+  </div>
+</nav>
 
-        <div class="al_sidebar">
-
-    <div class="al_sidebar_overlay al_full_cover"></div>
-
-    <div class="al_pos_fixed al_sidebar_cnt">
-        <div class="dis_flex_acenter al_sidebar_header">
-            <h3>Hexo</h3>
-            <div class="al_sidebar_close al_header_setting">
-                <svg class="al_header_icon">
-                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-close"></use>
-                </svg>
-            </div>
-        </div>
-
-        <div class="al_sidebar_author_cnt">
-
-            <div class="al_sidebar_author_info">
-                <h4>sweet8bit</h4>
-                <img class="al_sidebar_avatar" src="https://yourAvatorURL">
-                <p></p>
-            </div>
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
 
             
+          </div>
+
+          
         </div>
+      </div>
     </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<div class="list-group">
+  <p class="h4">2 posts in total.</p>
+  <hr>
+  
+    
+      
+      <p class="h5">2020</p>
+    
+    <a href="/2020/05/26/demo1/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">demo1</span>
+      <span style="float: right;">05-26</span>
+    </a>
+  
+    
+    <a href="/2020/05/26/hello-world/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">hello-world</span>
+      <span style="float: right;">05-26</span>
+    </a>
+  
 </div>
 
-        
-    <div class="al_index_background dis_flex_center al_full_cover">
-        <div class="al_pos_ab al_letter al_index_background_letter">
-            A
-        </div>
-        <h2 class="al_index_background_bio">
-            A Simple Theme
-        </h2>
-    </div>
 
-    <div class="al_index_container">
-        <div class="al_pos_ab al_fake_background"></div>
-        <div class="al_main_container al_shadow">
-            <div class="al_section_container dis_flex_jcenter">
-                <div class="section_header">
-                    LATEST PAGES
-                </div>
+
+              </div>
             </div>
-
-            <ul class="al_post_list">
-                
-                    <li class="al_index_pageList_item al_index_page_seperator">
-                        <div class="al_index_post_title_cnt dis_flex">
-                            <div class="al_pos_ab al_letter al_index_post_title_letter">
-                                H
-                            </div>
-                            <h2 class="al_index_post_title">
-                                <a href="/2020/05/26/hello-world/">
-                                    hello-world
-                                </a>
-                            </h2>
-                            <div class="al_index_post_extra dis_flex">
-                                <div class="al_index_post_date al_index_post_extra_item">
-                                    May 26
-                                </div>
-
-                                
-
-                            </div>
-                        </div>
-                        <div class="al_index_post_excerpt_cnt">
-                            <p class="al_index_post_excerpt">
-                                
-                            </p>
-                        </div>
-                        <div class="al_index_post_button_cnt dis_flex">
-                            <a class="al_button al_button_theme al_index_post_button" href="2020/05/26/hello-world/">
-                                READ ON
-                            </a>
-                            <a class="al_button al_button_transparent al_index_post_button" href="//getpocket.com/edit?url=https://sweet8bit.github.io/" target="_blank" rel="noopener">
-                                READ LATER
-                            </a>
-                        </div>
-                    </li>
-                
-            </ul>
-
-            <nav class="dis_flex al_post_nav">
-                <a class="al_post_nav_item dis_flex_acenter" href="/">
-                    
-                </a>
-                <a class="al_post_nav_item dis_flex_acenter" href="/">
-                    
-                </a>
-            </nav>
+          </div>
         </div>
-    </div>
-
-        <div class="al_index_footer dis_flex_center">
-    <div class="al_index_footer_item al_index_footer_title">
-        sweet8bit
-    </div>
-
+      </div>
     
-    
+  </main>
 
-    <div class="al_index_footer_item al_index_footer_extra">
-        Created By 
-        <a href="https://github.com/iGuan7u/Acetolog" target="_blank" rel="noopener">AcetoLog</a>
-         · Power By 
-        <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>
-    </div>
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
 
-    <div class="al_index_footer_item al_index_footer_extra_right">
-        All Right Reserved
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
     </div>
+  </div>
 </div>
+  
 
-        <script type="text/javascript" async="async" src="/javascripts/acelog.js"></script>
-        
-        
-        
-        
-    </body>
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/main.js" ></script>
+
+
+  <script  src="/js/lazyload.js" ></script>
+
+
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+<!-- Plugins -->
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Archive&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
 </html>
-        

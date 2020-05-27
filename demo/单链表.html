@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="sweet8bit">
   <meta name="keywords" content="">
-  <title>归档 - Hexo</title>
+  <title>单链表 - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
@@ -119,7 +119,7 @@
 </nav>
 
     <div class="view intro-2" id="background" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
+         style="background: url('/img/pageBackground.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -148,28 +148,17 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">共计 2 篇文章</p>
-  <hr>
-  
-    
-      
-      <p class="h5">2020</p>
-    
-    <a href="/2020/05/27/%E5%8D%95%E9%93%BE%E8%A1%A8/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">单链表</span>
-      <span style="float: right;">05-27</span>
-    </a>
-  
-    
-    <a href="/2020/05/26/JavaScript30/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">JavaScript 30</span>
-      <span style="float: right;">05-26</span>
-    </a>
-  
+<div class="page-content">
+  <p>以<code>链式结构</code>存储的线性表称为链表<br>存储单元可以是相邻的，也可以是不相邻的<br>链表的每一个节点只包含一个指针与，因此又称为单链</p>
+<h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><table>
+<tr>
+    <td>数据域</td>
+    <td>指针域</td>
+</tr>
+</table>
+指针域存放着下一个数据的头地址
+<img src="avatar.png" srcset="/img/loading.gif">
 </div>
-
-
 
               </div>
             </div>
@@ -258,7 +247,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "归档&nbsp;",
+        "单链表&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,

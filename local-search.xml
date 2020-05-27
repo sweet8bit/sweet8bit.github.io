@@ -4,11 +4,30 @@
   
   
   <entry>
+    <title>单链表</title>
+    <link href="/2020/05/27/%E5%8D%95%E9%93%BE%E8%A1%A8/"/>
+    <url>/2020/05/27/%E5%8D%95%E9%93%BE%E8%A1%A8/</url>
+    
+    <content type="html"><![CDATA[<p>以<code>链式结构</code>存储的线性表称为链表<br>存储单元可以是相邻的，也可以是不相邻的<br>链表的每一个节点只包含一个指针与，因此又称为单链</p><h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><table><tr>    <td>数据域</td>    <td>指针域</td></tr></table>指针域存放着下一个数据的头地址<h3 id="非空链表与空链表"><a href="#非空链表与空链表" class="headerlink" title="非空链表与空链表"></a>非空链表与空链表</h3><img src="/img/链表非空.png" srcset="/img/loading.gif"><img src="/img/链表空.png" srcset="/img/loading.gif"><h3 id="e-g"><a href="#e-g" class="headerlink" title="e.g."></a>e.g.</h3><table><tr>    <td>存储地址</td>    <td>数据域</td>    <td>指针域</td></tr><tr>    <td>1</td>    <td>李</td>    <td>40</td></tr><tr>    <td>7</td>    <td>张</td>    <td>40</td></tr><tr>    <td>15</td>    <td>赵</td>    <td>Null</td></tr><tr>    <td>20</td>    <td>王</td>    <td>1</td></tr><tr>    <td>40</td>    <td>钱</td>    <td>14</td></tr><tr>    <td>14</td>    <td>孙</td>    <td>13</td></tr><tr>    <td>13</td>    <td>吴</td>    <td>7</td></tr></table>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>数据结构</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>JavaScript 30</title>
     <link href="/2020/05/26/JavaScript30/"/>
     <url>/2020/05/26/JavaScript30/</url>
     
-    <content type="html"><![CDATA[<p>JavaScript30天学习摘要</p><h2 id="const"><a href="#const" class="headerlink" title="const"></a>const</h2><p>声明一个只读的常量，标识符的值只能赋予一次<br>const实际上保证的是指针是固定的，但指向的数据结构是可变的</p><h2 id="Object-freze"><a href="#Object-freze" class="headerlink" title="Object.freze()"></a>Object.freze()</h2><p>接受一个参数，如果参数是一个对象，则把这个对象冻结，如果是其他类型不会报错，无影响<br>被冻结后不能 修改 | 添加 | 删除 其属性或属性值，性能好</p><pre><code class="hljs bash">const foo = &#123;&#125;;foot.prop = 123;  // 添加一个属性，成功foo = &#123;&#125;;  // 指向另一个对象，报错</code></pre><pre><code class="hljs bash">const foo = Object.freze(&#123;&#125;);foo.prop = 123;  // 不起作用，严格模式下会报错</code></pre><p>##模板字符串<br>在模板中使用反引号 ` 时，需要加转义符 \ </p><h3 id="多行字符串"><a href="#多行字符串" class="headerlink" title="多行字符串"></a>多行字符串</h3><p>在新行中插入的任何字符都是模板字符串中的一部分<br>普通字符串要加 \n 和 +</p><pre><code class="hljs bash">console.log(`string text line 1string text line2`);</code></pre>]]></content>
+    <content type="html"><![CDATA[<p>JavaScript30天学习摘要</p><h2 id="const"><a href="#const" class="headerlink" title="const"></a>const</h2><p>声明一个只读的常量，标识符的值只能赋予一次<br>const实际上保证的是指针是固定的，但指向的数据结构是可变的</p><h2 id="Object-freze"><a href="#Object-freze" class="headerlink" title="Object.freze()"></a>Object.freze()</h2><p>接受一个参数，如果参数是一个对象，则把这个对象冻结，如果是其他类型不会报错，无影响<br>被冻结后不能 修改 | 添加 | 删除 其属性或属性值，性能好</p><pre><code class="hljs bash">const foo = &#123;&#125;;foot.prop = 123;  // 添加一个属性，成功foo = &#123;&#125;;  // 指向另一个对象，报错</code></pre><pre><code class="hljs bash">const foo = Object.freze(&#123;&#125;);foo.prop = 123;  // 不起作用，严格模式下会报错</code></pre><h2 id="模板字符串"><a href="#模板字符串" class="headerlink" title="模板字符串"></a>模板字符串</h2><p>在模板中使用反引号 ` 时，需要加转义符 \</p><p>' \` ' === " ` "</p><h3 id="多行字符串"><a href="#多行字符串" class="headerlink" title="多行字符串"></a>多行字符串</h3><p>在新行中插入的任何字符都是模板字符串中的一部分<br>普通字符串要加 \n 和 +</p><pre><code class="hljs bash">console.log(`string text line 1string text line2`);</code></pre><h3 id="插入表达式"><a href="#插入表达式" class="headerlink" title="插入表达式"></a>插入表达式</h3><p>模板字符串更优雅</p><pre><code class="hljs bash">var a = 5;var b = 10;console.log(<span class="hljs-string">'Fifteen is'</span> + (a + b) + <span class="hljs-string">'and \n not'</span> + (2 * a + b) + <span class="hljs-string">'.'</span>);console.log(`Fifteen is %&#123;a + b&#125; and not $ &#123;2 * a + b&#125;. `);</code></pre><p>结果均是 Fifteen is 15 and not 20.</p>]]></content>
     
     
     

@@ -119,7 +119,7 @@
 </nav>
 
     <div class="view intro-2" id="background" parallax=true
-         style="background: url('/img/pageBackground.png') no-repeat center center;
+         style="background: url('/img/pageBackground1.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -222,6 +222,88 @@
 </tr>
 </table>
 
+<h2 id="操作集"><a href="#操作集" class="headerlink" title="操作集"></a>操作集</h2><h3 id="定义链表"><a href="#定义链表" class="headerlink" title="定义链表"></a>定义链表</h3><pre><code class="hljs bash">struct node
+&#123;
+	int data;
+	struct node* next;
+&#125;</code></pre>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><pre><code class="hljs bash">struct node* initlink()
+&#123;
+	struct node* p;
+	p = (struct node*)malloc(sizeof(struct node));
+	p-&gt;next = null;
+	<span class="hljs-built_in">return</span> p;
+&#125;</code></pre>
+<p><code>malloc</code>申请指定空间的内存<br><code>sizeof</code>返回一个变量或内存的大小</p>
+<h3 id="填入"><a href="#填入" class="headerlink" title="填入"></a>填入</h3><pre><code class="hljs bash">void insert(struct node* l)
+&#123;
+	int x;
+	struct node* p;
+	<span class="hljs-keyword">while</span>(1)
+	&#123;
+		<span class="hljs-built_in">printf</span>(<span class="hljs-string">"请输入一个数据："</span>);
+		scannf_s(<span class="hljs-string">"%d"</span>, &amp;x);
+		<span class="hljs-keyword">if</span>(x == 0)
+		&#123;
+			<span class="hljs-built_in">break</span>;
+		&#125;
+		p = (struct node*)malloc(sizeof(struct node));
+		p-&gt;data = x;
+		p-&gt;next = l-&gt;next;
+		l-&gt;next = p;
+	&#125;
+&#125;</code></pre>
+<p>填入的数据呈反向输出</p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><pre><code class="hljs bash">void show(struct node* l)
+&#123;
+	struct node* p;
+	p = l;
+	<span class="hljs-keyword">while</span>(p-&gt;next != null)
+	&#123;
+		p = p-&gt;next;
+		<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%-4d"</span>, p-&gt;data);
+	&#125;
+&#125;</code></pre>
+
+<h3 id="返回长度"><a href="#返回长度" class="headerlink" title="返回长度"></a>返回长度</h3><pre><code class="hljs bash">int length(struct node* l)
+&#123;
+	int len = 0;
+	struct node* p;
+	p = l;
+	<span class="hljs-keyword">while</span>(p-&gt;next != 0)
+	&#123;
+		p = p-&gt;next;
+		length++;
+	&#125;
+	<span class="hljs-built_in">return</span> len;
+&#125;</code></pre>
+<p>临时变量p是必须的，否则链表数据会丢失</p>
+<h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><pre><code class="hljs bash">void search(struct node* l)
+&#123;
+	int x;
+	struct node* p;
+	int i = 0;
+	p = l;
+	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"请输入要查找的数："</span>);
+	scannf_s(<span class="hljs-string">"%d"</span>, &amp;x);
+	<span class="hljs-keyword">while</span>(p-&gt;next != null)
+	&#123;
+		p = p-&gt;next;
+		i++;
+		<span class="hljs-keyword">if</span>(p-&gt;data == x)
+		&#123;
+			<span class="hljs-built_in">break</span>;
+		&#125;
+	&#125;
+	<span class="hljs-keyword">if</span>(p != null)
+	&#123;
+		<span class="hljs-built_in">printf</span>(<span class="hljs-string">"位置在：%d\n"</span>, i);
+	&#125;
+	<span class="hljs-keyword">else</span>
+	&#123;
+		<span class="hljs-built_in">printf</span>(<span class="hljs-string">"未找到"</span>);
+	&#125;
+&#125;</code></pre>
             </article>
             <hr>
             <div>

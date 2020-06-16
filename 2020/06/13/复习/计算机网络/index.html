@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="sweet8bit">
+  <meta name="keywords" content="">
+  <title>计算机网络 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_yg9cfy8wd6.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script  src="/js/utils.js" ></script>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Sweet</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/pageBackground1.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+  <div class="mt-3 post-meta">
+    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+    <time datetime="2020-06-13 16:02">
+      2020年6月13日 下午
+    </time>
+  </div>
+
+
+<div class="mt-1">
+  
+
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><h3 id="网络分类"><a href="#网络分类" class="headerlink" title="网络分类"></a>网络分类</h3><p>按网络覆盖的范围划分  LAN局域网  WAN广域网  MAN城域网<br>按用途划分  主干网  接入网  用户网络<br>逻辑功能划分  资源子网  通信子网</p>
+<h3 id="拓扑结构"><a href="#拓扑结构" class="headerlink" title="拓扑结构"></a>拓扑结构</h3><p>总线结构<br>环形结构<br>星型结构<br>树形结构<br>网状结构</p>
+<h3 id="习题"><a href="#习题" class="headerlink" title="习题"></a>习题</h3><p>计算机网络技术是 通信技术 和 计算机技术 的结合<br>从资源共享的角度来定义计算机网络，指的是利用 通信线路 将不同地理位置的多个独立的 计算机系统 连接起来以实现资源共享的系统</p>
+<h2 id="二"><a href="#二" class="headerlink" title="二"></a>二</h2><p>网络协议三要素  语义 语法 时序</p>
+<h3 id="OSI"><a href="#OSI" class="headerlink" title="OSI"></a>OSI</h3><p>七层模型：</p>
+<pre><code>主机
+应用层
+表示层
+会话层
+传输层            通信子网
+网络层            网络层
+数据链路层        数据链路层
+物理层            物理层</code></pre><h3 id="数据通信"><a href="#数据通信" class="headerlink" title="数据通信"></a>数据通信</h3><p>交互方式 </p>
+<pre><code>单工通信        单方向发送 
+半双工通信   同时只有一个发送
+全双工通信    同时双方向发送</code></pre><p>同步：</p>
+<pre><code>位同步    识别比特的开始和结束
+    外带同步  用同步时钟信号区调整校正接收方的时间基准和时钟频率
+    自带同步  再发送数据的同时，通过编码技术让传输的数据中包含同步信息
+字符同步     识别数据块的结束与开始
+    异步传输    以字符为单位传输，实现加入约定好的起始位和终止位
+    同步传输 多个字符组成一个数据块一起传输，在数据块开头和结尾分别加上用于同步控制的专用字符</code></pre><h3 id="通信指标"><a href="#通信指标" class="headerlink" title="通信指标"></a>通信指标</h3><p>数据传输速率  R = 1 / T (bps)<br>            传输速率 = 1 / 脉冲带宽(一位的持续时间)<br>码元速率        C = 1 / t (baud)<br>            码元速率 = 1 / 传输一个码元的时间</p>
+<p>码元速率与数据传输速率的关系  R = C log2 M (bps)<br>    M为一个码元所取的离散值个数</p>
+<p>奈奎斯特准则  C = 2B (baud)<br>    B为信道带宽<br>总结 R = 2B log2 M</p>
+<p>香农公式  R = B log2 (1 + S / N)<br>    S/N为信号的信噪比  1dB = 10 log10 S/N<br>误码率  Pe = Ne / N</p>
+<h3 id="数据编码技术"><a href="#数据编码技术" class="headerlink" title="数据编码技术"></a>数据编码技术</h3><p>数字数据-模拟信号 ASK幅移键控  FSK频移键控  PSK相移键控<br>       -数字信号<br>               NRZ  1上0下<br>               曼彻斯特  跳变方向代表0和1<br>               差分曼彻斯特  跳变0 不跳1<br>模拟数据-数字信号      PCM 1.采样  2.量化  3.编码</p>
+<h3 id="差错控制"><a href="#差错控制" class="headerlink" title="差错控制"></a>差错控制</h3><p>奇偶校验  在最高位或最低位增加一位，是结果的1的个数为奇或偶，最终判断个数，只能判断奇数位错误<br>循环冗余校验CRC</p>
+<pre><code>发送数据F，约定好的校验G
+多项式F转化为二进制，同时加上最高次幂个零
+G / F  F被除 模二除  加零后的F加上冗余码
+发送
+G / F  无余数说明无错 有余数证明有错</code></pre><p>能检测出 1.全部单个错  2.全部离散的二位错  3.全部奇数个错误  4.全部长度小于或等于k的突发性错误  5.能以 1-(1/2)k-1次方 位的突发性错误</p>
+<p>反馈重发机制<br>    停止等待  控制简单，效率低<br>    连续工作  拉回方式 / 选择重发方式</p>
+<h3 id="数据交换"><a href="#数据交换" class="headerlink" title="数据交换"></a>数据交换</h3><p>数据交换        线路交换<br>            存储转发<br>                报文交换<br>                分组交换<br>                    虚电路<br>                    数据报<br>线路交换又称为 电路交换  1.建立线路 2.数据传输 3.释放线路<br>报文交换<br>分组交换<br>虚电路交换(提前探路)</p>
+<h3 id="多路复用"><a href="#多路复用" class="headerlink" title="多路复用"></a>多路复用</h3><p>频分多路复用  时分~  波分~  码分~</p>
+<h3 id="习题-1"><a href="#习题-1" class="headerlink" title="习题"></a>习题</h3><p>OSI单元</p>
+<pre><code>物理层    bit
+数据链路层    帧
+网络层    分组</code></pre><p>路由选择功能是在 网络层 实现的</p>
+<h2 id="三"><a href="#三" class="headerlink" title="三"></a>三</h2><h3 id="习题-2"><a href="#习题-2" class="headerlink" title="习题"></a>习题</h3><p>有线传输介质包括 双绞线 同轴电缆 光纤<br>双绞线分为 7 类<br>50Ω同轴电缆主要用于传输 数字信号，又称为 基带同轴电缆<br>75Ω同轴电缆主要用于传输 模拟信号，又称为 宽带同轴电缆<br>光纤分为 单模 和 多模<br>无线传输方式  无线电 微波 卫星<br>网桥分为 透明网桥 和 源路由网桥<br>动态路由算法  距离向量 链路状态 混合路由<br>路由表分为 静态路由表 动态路由表</p>
+<p>设备中传输延迟最大的是 路由器<br>路由器转发数据是依据 网络号<br>隔离冲突，不能隔离广播是 网桥的作用</p>
+<h2 id="四"><a href="#四" class="headerlink" title="四"></a>四</h2><p>TCP/IP分层</p>
+<pre><code>应用层        osi 应用层 表示层 会话层
+传输层        osi 传输层
+互连层        osi 网络层
+网络接口层    osi 数据链路层 物理层</code></pre><p>协议    </p>
+<pre><code>Telnet 虚拟终端协议
+FTP 文件传输协议
+SMTP 简单邮件传输协议
+DNS 域名系统
+HTTP 超文本传输协议
+POP 邮局协议
+SNMP 简单网络管理协议</code></pre><h3 id="IP"><a href="#IP" class="headerlink" title="IP"></a>IP</h3><p>网络号 + 主机号<br>A类地址 8 + 24        1.0 - 126.255<br>B类地址 16 + 16        128.0 - 191.255<br>C类地址 24 + 8        192.0 - 223.255<br>主机地址不能全为 1 或者 0<br>子网是从 主机号 中 分出子网号<br>IP 与上 子网源码 = 子网号</p>
+<p>有效子网 = 2^子网位<br>主机地址 = 2^子网位 - 2<br>整个网络的有效子网 = 有效子网 * 主机地址</p>
+<p>IP分布就是子网号的各种情况 全0 ~ 全1<br>子网不在同一个网段不能直接通信</p>
+<h2 id="五"><a href="#五" class="headerlink" title="五"></a>五</h2><h3 id="局域网"><a href="#局域网" class="headerlink" title="局域网"></a>局域网</h3><p>局域网层次 = OSI低两层<br>数据链路层 = 逻辑链路控制子层 + 介质访问控制子层<br>物理层= 物理层</p>
+<h3 id="IEEE802"><a href="#IEEE802" class="headerlink" title="IEEE802"></a>IEEE802</h3><p>IEEE802.3 定义了CSMA/CD总线访问控制及物理层规范(以太网)<br>IEEE802.11 定义了无线局域网(WLAN)访问控制及物理层规范(wifi)</p>
+<h3 id="共享介质以太网"><a href="#共享介质以太网" class="headerlink" title="共享介质以太网"></a>共享介质以太网</h3><p>星型结构<br>4个阶段<br>    ALOHA<br>    时隙ALOHA<br>    载波侦听和多路访问CSMA<br>    CSMA/CD <code>先听后发，边听边发，冲突停止，随即重发</code><br>帧长度<br>    <code>帧长度 = （ 2 * 距离 * 速度 ）/ 电速</code><br>退避算法<br>    1.确定退避时间T，T=串口长度2t<br>    2.定义重传次数k，小于10时，k=次数。大于10时，k=10。<br>    3.k = 1，0 ~ T之间随机重发<br>    4.k = 2，0 ~ 2T之间随即重发<br>    5.重传16次还冲突，则禁止发送<br>检查帧长度是否小于64B，小于说明是冲突后的帧</p>
+<h3 id="交换以太网"><a href="#交换以太网" class="headerlink" title="交换以太网"></a>交换以太网</h3><p>以太网交换机分为三种  1.直通式  2.存储转发  3.碎片隔离<br>特点<br>    1.与共享以太网兼容<br>    2.支持不同传输速率和工作模式<br>    3.支持多信道同时传输<br>    4.低交换延迟<br>    5.支持虚拟网服务</p>
+<h3 id="虚拟局域网VLAN"><a href="#虚拟局域网VLAN" class="headerlink" title="虚拟局域网VLAN"></a>虚拟局域网VLAN</h3><p>特点<br>    1.提高管理效率<br>    2.隔离广播<br>    3.增强网络安全性<br>实现方式  1.基于端口  2.基于MAC  3.基于网络地址<br>三种可以叠加</p>
+<h3 id="无线局域网WLAN"><a href="#无线局域网WLAN" class="headerlink" title="无线局域网WLAN"></a>无线局域网WLAN</h3><p>特点<br>    1.安装便捷<br>    2.使用灵活<br>    3.易于拓展<br>无线局域网分为<br>    1.无基础设施  网络相同，主机不同<br>    2.有基础设施</p>
+<h3 id="习题-3"><a href="#习题-3" class="headerlink" title="习题"></a>习题</h3><p>IEEE802.4 是令牌总线网的标准<br>决定局域网性能是三要素  传输介质 拓扑结构 介质访问控制方式<br>介质访问控制方法有 CSMA/CD 令牌控制</p>
+<h2 id="六"><a href="#六" class="headerlink" title="六"></a>六</h2><h3 id="公共电话网PSTN"><a href="#公共电话网PSTN" class="headerlink" title="公共电话网PSTN"></a>公共电话网PSTN</h3><p>电路交换 模拟话音<br>3部分组成 本地回路 干线 交换机<br>采用 数字传输和交换技术 基于 模拟线路</p>
+<h3 id="DDN"><a href="#DDN" class="headerlink" title="DDN"></a>DDN</h3><p>利用 数字信道<br>主要介质有 光纤 数字微波 卫星通信<br>永久性链接 半永久性链接</p>
+<h3 id="分组交换网"><a href="#分组交换网" class="headerlink" title="分组交换网"></a>分组交换网</h3><p>用于数据通信<br>对应 OSI底三层<br>速度只有64kbps</p>
+<h3 id="帧中继网"><a href="#帧中继网" class="headerlink" title="帧中继网"></a>帧中继网</h3><p>由分组交换技术演而来<br>只完成了OSI的 物理层 和 数据链路层<br>适用于 突发性强 速率较高 时延较短 经济性较好的数据传输业务</p>
+<h3 id="ISDN"><a href="#ISDN" class="headerlink" title="ISDN"></a>ISDN</h3><p>综合业务数字网</p>
+<p>B 64kpbs  D 16kbps<br>基本速率接口 2B + D<br>一次群速率接口 30B + D<br>2.048mbps  1.544mbps</p>
+<h3 id="习题-4"><a href="#习题-4" class="headerlink" title="习题"></a>习题</h3><p>ADSL 下行8mbps 上行1mbps<br>ADSL支持两种接入方式  桥接模式  路由模式<br>ADSL的isp提供两种服务  专线接入  虚拟拨号<br>NAT有三种类型  静态NAT 动态NAT 网络端口转换</p>
+<h2 id="七"><a href="#七" class="headerlink" title="七"></a>七</h2><p>常见的电子邮件协议 SMTP MIME POP3 IMAP<br>因特网发展4阶段 ARPANET TCP/IP NSFNET WWW<br>因特网三种地址<br>    应用层的 域名<br>    网络层的 IP地址<br>    数据链路层的 MAC地址<br>DNS解析分为 反复解析 递归解析<br>实现动态网页的技术主要有 ASP JSP PHP<br>网络电话的3种实现方式 PC到PC PC到电话 电话到电话</p>
+
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0/">课程复习</a>
+                    
+                  </div>
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/06/14/%E5%A4%8D%E4%B9%A0/%E5%8D%95%E7%89%87%E6%9C%BA/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">单片机</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2020/06/08/%E5%A4%8D%E4%B9%A0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">
+                        <span class="hidden-mobile">计算机组成原理</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: 'article.markdown-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "计算机网络&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

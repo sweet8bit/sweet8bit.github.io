@@ -17,24 +17,28 @@
   <meta name="description" content="">
   <meta name="author" content="sweet8bit">
   <meta name="keywords" content="">
-  <title>JavaScript 30 - Hexo</title>
+  <title>单片机 - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
-<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
 
 
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+  
+
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_fmb4a04yx8h.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_yg9cfy8wd6.css">
 
 
 
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
-
-
 
 
 <link  rel="stylesheet" href="/css/main.css" />
@@ -42,6 +46,7 @@
 <!-- 自定义样式保持在最底部 -->
 
 
+  <script  src="/js/utils.js" ></script>
 <meta name="generator" content="Hexo 4.2.1"></head>
 
 
@@ -65,47 +70,62 @@
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="/">
-              <i class="iconfont icon-home-fill"></i>
-              首页</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
         
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="/archives/">
-              <i class="iconfont icon-archive-fill"></i>
-              归档</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
         
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="/categories/">
-              <i class="iconfont icon-category-fill"></i>
-              分类</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
         
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="/tags/">
-              <i class="iconfont icon-tags-fill"></i>
-              标签</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
         
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="/about/">
-              <i class="iconfont icon-user-fill"></i>
-              关于</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
         
         
           <li class="nav-item" id="search-btn">
@@ -130,21 +150,23 @@
 
             
               
-                <div class="mt-3 post-meta">
-                  <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-                  <time datetime="2020-05-26 20:04">
-                    2020年5月26日 晚上
-                  </time>
-                </div>
-              
+  <div class="mt-3 post-meta">
+    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+    <time datetime="2020-06-14 16:42">
+      2020年6月14日 下午
+    </time>
+  </div>
 
-              <div class="mt-1">
-                
 
-                
+<div class="mt-1">
+  
 
-                
-              </div>
+  
+
+  
+  
+</div>
+
             
           </div>
 
@@ -167,40 +189,49 @@
           <div class="post-content mx-auto" id="post">
             
             <article class="markdown-body">
-              <p>JavaScript30天学习摘要</p>
-<h2 id="const"><a href="#const" class="headerlink" title="const"></a>const</h2><p>声明一个只读的常量，标识符的值只能赋予一次<br>const实际上保证的是指针是固定的，但指向的数据结构是可变的</p>
-<h2 id="Object-freze"><a href="#Object-freze" class="headerlink" title="Object.freze()"></a>Object.freze()</h2><p>接受一个参数，如果参数是一个对象，则把这个对象冻结，如果是其他类型不会报错，无影响<br>被冻结后不能 修改 | 添加 | 删除 其属性或属性值，性能好</p>
-<pre><code class="hljs bash">const foo = &#123;&#125;;
-foot.prop = 123;  // 添加一个属性，成功
-foo = &#123;&#125;;  // 指向另一个对象，报错</code></pre>
+              <h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>CPU能直接识别的是 机器语言<br>C程序执行总是从  main() 函数开始<br>单片机的应用程序一般放在 ROM 中<br>51单片机工作时需要 5V电源</p>
+<p>微处理机：<br>微计算机；<br>CPU:<br>单片机：<br>嵌入式处理器：</p>
+<h2 id="二"><a href="#二" class="headerlink" title="二"></a>二</h2><p>Keil软件中，工程文件的拓展名是 uv2 ，编译连接后生成可烧写的文件拓展名是 hex<br>Proteus软件包提供一种界面友好的人机交互式集成环境 ISIS<br>Proteus软件实现仿真步骤： 电路原理图设计、源程序设计与生成目标代码、仿真与调试。</p>
+<pre><code class="hljs bash">include&lt;reg51.h&gt;	// 寄存器定义
+include&lt;stdio.h&gt;	// 一般IO口定义
+sbit LED = P1^0;	// LED灯链接在P1.0上
+int data i;			// 定义一个整型全局变量
+vodi main(void)
+&#123;
+	<span class="hljs-keyword">while</span>(1)
+	&#123;
+		LED = 0;	// LED灯点亮
+		<span class="hljs-keyword">for</span> ( i = 0; i &lt; 1000; i++ );	// 延时
+		LED = 1;	// LED灯熄灭
+		<span class="hljs-keyword">for</span> (i = 0; i &lt; 1000; i++);
+	&#125;
+&#125;</code></pre>
 
-<pre><code class="hljs bash">const foo = Object.freze(&#123;&#125;);
-foo.prop = 123;  // 不起作用，严格模式下会报错</code></pre>
-<h2 id="模板字符串"><a href="#模板字符串" class="headerlink" title="模板字符串"></a>模板字符串</h2><p>在模板中使用反引号 ` 时，需要加转义符 \</p>
-<p>' \` ' === " ` "</p>
-
-<h3 id="多行字符串"><a href="#多行字符串" class="headerlink" title="多行字符串"></a>多行字符串</h3><p>在新行中插入的任何字符都是模板字符串中的一部分<br>普通字符串要加 \n 和 +</p>
-<pre><code class="hljs bash">console.log(`string text line 1
-string text line2`);</code></pre>
-<h3 id="插入表达式"><a href="#插入表达式" class="headerlink" title="插入表达式"></a>插入表达式</h3><p>模板字符串更优雅</p>
-<pre><code class="hljs bash">var a = 5;
-var b = 10;
-console.log(<span class="hljs-string">'Fifteen is'</span> + (a + b) + <span class="hljs-string">'and \n not'</span> + (2 * a + b) + <span class="hljs-string">'.'</span>);
-console.log(`Fifteen is %&#123;a + b&#125; and not $ &#123;2 * a + b&#125;. `);</code></pre>
-<p>结果均是 Fifteen is 15 and not 20.</p>
+<h2 id="三"><a href="#三" class="headerlink" title="三"></a>三</h2><p>5个中断源：</p>
+<pre><code>0000H 主程序入口
+0003H INT0中断入口
+000BH T0中断入口
+0013H INT1中断入口
+001BH T1中端入口</code></pre><p>4个专用中断寄存器</p>
+<pre><code>TLON 定时器控制寄存器
+SCON 串行口控制寄存器
+IE 中断允许控制寄存器
+IP 中断优先级控制寄存器</code></pre><h2 id="四"><a href="#四" class="headerlink" title="四"></a>四</h2><p>单片机最小系统  电源、时针、复位<br>电源引脚 CVV VSS 20、40引脚<br>时钟引脚 18、19引脚<br>复位电路 9引脚</p>
+<p>外部晶振12Mhz=时钟频率  时钟周期=1/时钟频率  机器周期=12 * 时钟周期</p>
+<p>51单片机的内部时钟方式是采用 外接晶体 和 瓷片电容 来组成并联谐振电路。<br>51单片机内部RAM区有 4 个工作寄存器区，有 128 个位地址 </p>
 
             </article>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/tags/JavaScript/">JavaScript</a>
+                      <a class="hover-with-bg" href="/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0/">课程复习</a>
                     
                   </div>
+                
                 
               </div>
               
@@ -211,15 +242,15 @@ console.log(`Fifteen is %&#123;a + b&#125; and not $ &#123;2 * a + b&#125;. `);<
                   <div class="post-prev col-6">
                     
                     
-                      <a href="/2020/05/27/%E5%8D%95%E9%93%BE%E8%A1%A8/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">单链表</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </div>
                   <div class="post-next col-6">
                     
+                    
+                      <a href="/2020/06/13/%E5%A4%8D%E4%B9%A0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                        <span class="hidden-mobile">计算机网络</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </div>
                 </div>
@@ -302,14 +333,27 @@ console.log(`Fifteen is %&#123;a + b&#125; and not $ &#123;2 * a + b&#125;. `);<
 <!-- SCRIPTS -->
 <script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
 <script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
 <script  src="/js/main.js" ></script>
 
-
-  <script  src="/js/lazyload.js" ></script>
-
+<!-- Plugins -->
 
 
   
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+
   <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
   <script>
     $(document).ready(function () {
@@ -318,7 +362,7 @@ console.log(`Fifteen is %&#123;a + b&#125; and not $ &#123;2 * a + b&#125;. `);<
 
       tocbot.init({
         tocSelector: '#tocbot',
-        contentSelector: '.post-content',
+        contentSelector: 'article.markdown-body',
         headingSelector: 'h1,h2,h3,h4,h5,h6',
         linkClass: 'tocbot-link',
         activeLinkClass: 'tocbot-active-link',
@@ -337,26 +381,12 @@ console.log(`Fifteen is %&#123;a + b&#125; and not $ &#123;2 * a + b&#125;. `);<
 
 
 
-
-
-  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
-  <script  src="/js/clipboard-use.js" ></script>
-
-
-
-
-
-
-<!-- Plugins -->
-
-
-
   <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
   <script>
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "JavaScript 30&nbsp;",
+        "单片机&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
@@ -413,6 +443,8 @@ console.log(`Fifteen is %&#123;a + b&#125; and not $ &#123;2 * a + b&#125;. `);<
       }
     );
   </script>
+
+
 
 
 

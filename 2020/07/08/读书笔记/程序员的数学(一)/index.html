@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="sweet8bit">
   <meta name="keywords" content="">
-  <title>单链表 - Hexo</title>
+  <title>程序员的数学(一) - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -152,8 +152,8 @@
               
   <div class="mt-3 post-meta">
     <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2020-05-27 15:53">
-      2020年5月27日 下午
+    <time datetime="2020-07-08 00:23">
+      2020年7月8日 凌晨
     </time>
   </div>
 
@@ -189,143 +189,32 @@
           <div class="post-content mx-auto" id="post">
             
             <article class="markdown-body">
-              <p>以<code>链式结构</code>存储的线性表称为链表<br>存储单元可以是相邻的，也可以是不相邻的<br>链表的每一个节点只包含一个指针与，因此又称为单链</p>
-<h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><table>
-<tr>
-    <td>数据域</td>
-    <td>指针域</td>
-</tr>
-</table>
-指针域存放着下一个数据的头地址
+              <h2 id="第一章-0的故事"><a href="#第一章-0的故事" class="headerlink" title="第一章 0的故事"></a>第一章 0的故事</h2><h3 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h3><h3 id="按位计数法"><a href="#按位计数法" class="headerlink" title="按位计数法"></a>按位计数法</h3><p>10进制、2进制、8进制、16进制都是按位计数法<br>N进制计数法<br> ·使用的数字有0，1，2，3，……， N-1<br> ·从左往右分别为 N^0 的位、 N^1 的位、 N^2的位……<br> 罗马计数法 罗马数字不是按位计数法</p>
+<h3 id="指数法则"><a href="#指数法则" class="headerlink" title="指数法则"></a>指数法则</h3><p>10^-1 = 1 / 10<br>10^-2 = 1 / 10 / 10</p>
+<p>2^-1 = 1 / 2<br>2^-2 = 1 / 2 / 2</p>
+<h3 id="0的作用"><a href="#0的作用" class="headerlink" title="0的作用"></a>0的作用</h3><p>·占位<br>·统一标准</p>
+<h2 id="第二章-逻辑"><a href="#第二章-逻辑" class="headerlink" title="第二章 逻辑"></a>第二章 逻辑</h2><p>逻辑是消除歧义的工具</p>
+<p>没有 遗漏，即具备 完整性，<br>没有 重复，即具备 排他性。</p>
+<h3 id="异或"><a href="#异或" class="headerlink" title="异或"></a>异或</h3><p>异或、或的区别： 异或中，A和B中，只有1个是true时才是true，2个都是true时为false</p>
+<h3 id="蕴含"><a href="#蕴含" class="headerlink" title="蕴含"></a>蕴含</h3><p>若A则B<br>A为true时，仅当B为false时 A蕴含B才为false，<br>A为false时，A蕴含B恒为true。<br><img src="/img/读书笔记/程序员的数学/真值表.png" srcset="/img/loading.gif"></p>
+<h3 id="德·摩根定理"><a href="#德·摩根定理" class="headerlink" title="德·摩根定理"></a>德·摩根定理</h3><pre><code class="hljs bash">非A 或者 非B，和 非 A于B 是等价的。
+非A 并且 非B，和 非 A或B 是等价的。</code></pre>
+<h3 id="卡诺图"><a href="#卡诺图" class="headerlink" title="卡诺图"></a>卡诺图</h3><p>将所有命题的真假组合以二维表的形式表示的图</p>
+<h3 id="未定义的逻辑"><a href="#未定义的逻辑" class="headerlink" title="未定义的逻辑"></a>未定义的逻辑</h3><p>undefined：得不到true和false中的任何一个值</p>
+<h3 id="逻辑与"><a href="#逻辑与" class="headerlink" title="逻辑与"></a>逻辑与</h3><img src="/img/读书笔记/程序员的数学/逻辑与.png" srcset="/img/loading.gif">
 
-<h3 id="非空链表与空链表"><a href="#非空链表与空链表" class="headerlink" title="非空链表与空链表"></a>非空链表与空链表</h3><img src="/img/数据结构/链表非空.png" srcset="/img/loading.gif">
-<img src="/img/数据结构/链表空.png" srcset="/img/loading.gif">
+<h3 id="逻辑或"><a href="#逻辑或" class="headerlink" title="逻辑或"></a>逻辑或</h3><img src="/img/读书笔记/程序员的数学/逻辑或.png" srcset="/img/loading.gif">
 
-<h3 id="e-g"><a href="#e-g" class="headerlink" title="e.g."></a>e.g.</h3><table>
-<tr>
-    <td>存储地址</td>
-    <td>数据域</td>
-    <td>指针域</td>
-</tr>
-<tr>
-    <td>1</td>
-    <td>李</td>
-    <td>40</td>
-</tr>
-<tr>
-    <td>7</td>
-    <td>张</td>
-    <td>40</td>
-</tr>
-<tr>
-    <td>15</td>
-    <td>赵</td>
-    <td>Null</td>
-</tr>
-<tr>
-    <td>20</td>
-    <td>王</td>
-    <td>1</td>
-</tr>
-<tr>
-    <td>40</td>
-    <td>钱</td>
-    <td>14</td>
-</tr>
-<tr>
-    <td>14</td>
-    <td>孙</td>
-    <td>13</td>
-</tr>
-<tr>
-    <td>13</td>
-    <td>吴</td>
-    <td>7</td>
-</tr>
-</table>
+<h3 id="逻辑非"><a href="#逻辑非" class="headerlink" title="逻辑非"></a>逻辑非</h3><img src="/img/读书笔记/程序员的数学/逻辑非.png" srcset="/img/loading.gif">
 
-<h2 id="操作集"><a href="#操作集" class="headerlink" title="操作集"></a>操作集</h2><h3 id="定义链表"><a href="#定义链表" class="headerlink" title="定义链表"></a>定义链表</h3><pre><code class="hljs bash">struct node
-&#123;
-	int data;
-	struct node* next;
-&#125;</code></pre>
-<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><pre><code class="hljs bash">struct node* initlink()
-&#123;
-	struct node* p;
-	p = (struct node*)malloc(sizeof(struct node));
-	p-&gt;next = null;
-	<span class="hljs-built_in">return</span> p;
-&#125;</code></pre>
-<p><code>malloc</code>申请指定空间的内存<br><code>sizeof</code>返回一个变量或内存的大小</p>
-<h3 id="填入"><a href="#填入" class="headerlink" title="填入"></a>填入</h3><pre><code class="hljs bash">void insert(struct node* l)
-&#123;
-	int x;
-	struct node* p;
-	<span class="hljs-keyword">while</span>(1)
-	&#123;
-		<span class="hljs-built_in">printf</span>(<span class="hljs-string">"请输入一个数据："</span>);
-		scannf_s(<span class="hljs-string">"%d"</span>, &amp;x);
-		<span class="hljs-keyword">if</span>(x == 0)
-		&#123;
-			<span class="hljs-built_in">break</span>;
-		&#125;
-		p = (struct node*)malloc(sizeof(struct node));
-		p-&gt;data = x;
-		p-&gt;next = l-&gt;next;
-		l-&gt;next = p;
-	&#125;
-&#125;</code></pre>
-<p>填入的数据呈反向输出</p>
-<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><pre><code class="hljs bash">void show(struct node* l)
-&#123;
-	struct node* p;
-	p = l;
-	<span class="hljs-keyword">while</span>(p-&gt;next != null)
-	&#123;
-		p = p-&gt;next;
-		<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%-4d"</span>, p-&gt;data);
-	&#125;
-&#125;</code></pre>
+<h3 id="三值逻辑的德·梅根定理"><a href="#三值逻辑的德·梅根定理" class="headerlink" title="三值逻辑的德·梅根定理"></a>三值逻辑的德·梅根定理</h3><img src="/img/读书笔记/程序员的数学/三值逻辑.png" srcset="/img/loading.gif">
 
-<h3 id="返回长度"><a href="#返回长度" class="headerlink" title="返回长度"></a>返回长度</h3><pre><code class="hljs bash">int length(struct node* l)
-&#123;
-	int len = 0;
-	struct node* p;
-	p = l;
-	<span class="hljs-keyword">while</span>(p-&gt;next != 0)
-	&#123;
-		p = p-&gt;next;
-		length++;
-	&#125;
-	<span class="hljs-built_in">return</span> len;
-&#125;</code></pre>
-<p>临时变量p是必须的，否则链表数据会丢失</p>
-<h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><pre><code class="hljs bash">void search(struct node* l)
-&#123;
-	int x;
-	struct node* p;
-	int i = 0;
-	p = l;
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"请输入要查找的数："</span>);
-	scannf_s(<span class="hljs-string">"%d"</span>, &amp;x);
-	<span class="hljs-keyword">while</span>(p-&gt;next != null)
-	&#123;
-		p = p-&gt;next;
-		i++;
-		<span class="hljs-keyword">if</span>(p-&gt;data == x)
-		&#123;
-			<span class="hljs-built_in">break</span>;
-		&#125;
-	&#125;
-	<span class="hljs-keyword">if</span>(p != null)
-	&#123;
-		<span class="hljs-built_in">printf</span>(<span class="hljs-string">"位置在：%d\n"</span>, i);
-	&#125;
-	<span class="hljs-keyword">else</span>
-	&#123;
-		<span class="hljs-built_in">printf</span>(<span class="hljs-string">"未找到"</span>);
-	&#125;
-&#125;</code></pre>
+<h3 id="逻辑的各种表现形式"><a href="#逻辑的各种表现形式" class="headerlink" title="逻辑的各种表现形式"></a>逻辑的各种表现形式</h3><img src="/img/读书笔记/程序员的数学/逻辑的各种表现形式.png" srcset="/img/loading.gif">
+
+<h3 id="运用逻辑实现简化"><a href="#运用逻辑实现简化" class="headerlink" title="运用逻辑实现简化"></a>运用逻辑实现简化</h3><img src="/img/读书笔记/程序员的数学/逻辑简化.png" srcset="/img/loading.gif">
+IF语句将世界一分为二
+
+<h2 id="第三章-余数"><a href="#第三章-余数" class="headerlink" title="第三章 余数"></a>第三章 余数</h2>
             </article>
             <hr>
             <div>
@@ -334,7 +223,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
+                      <a class="hover-with-bg" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
                     
                   </div>
                 
@@ -342,7 +231,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
+                      <a class="hover-with-bg" href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%95%B0%E5%AD%A6/">程序员的数学</a>
                     
                   </div>
                 
@@ -355,18 +244,12 @@
                   <div class="post-prev col-6">
                     
                     
-                      <a href="/2020/07/08/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%95%B0%E5%AD%A6(%E4%B8%80)/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">程序员的数学(一)</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </div>
                   <div class="post-next col-6">
                     
                     
-                      <a href="/2020/05/26/js/JavaScript30/">
-                        <span class="hidden-mobile">JavaScript 30</span>
+                      <a href="/2020/05/27/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%8D%95%E9%93%BE%E8%A1%A8/">
+                        <span class="hidden-mobile">单链表</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -505,7 +388,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "单链表&nbsp;",
+        "程序员的数学(一)&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
